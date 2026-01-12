@@ -3,7 +3,7 @@
 
 import { useEffect, useRef } from "react";
 import { portfolioData } from "@/data/portfolio";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Phone } from "lucide-react";
 import Link from "next/link";
 
 export const Hero = () => {
@@ -118,18 +118,26 @@ export const Hero = () => {
                         <Linkedin className="w-6 h-6" />
                     </Link>
                     <Link
-                        href={portfolioData.hero.links.email}
-                        className="p-2 rounded-full hover:bg-slate-800 transition-colors text-slate-400 hover:text-indigo-research"
-                    >
-                        <Mail className="w-6 h-6" />
-                    </Link>
-                    <Link
-                        href="https://github.com" // Placeholder if not provided, assuming standard
+                        href={portfolioData.hero.links.github}
                         target="_blank"
                         className="p-2 rounded-full hover:bg-slate-800 transition-colors text-slate-400 hover:text-white"
                     >
                         <Github className="w-6 h-6" />
                     </Link>
+                    <Link
+                        href={portfolioData.hero.links.email}
+                        className="p-2 rounded-full hover:bg-slate-800 transition-colors text-slate-400 hover:text-indigo-research"
+                    >
+                        <Mail className="w-6 h-6" />
+                    </Link>
+                    {portfolioData.hero.links.phone && (
+                        <Link
+                            href={portfolioData.hero.links.phone}
+                            className="p-2 rounded-full hover:bg-slate-800 transition-colors text-slate-400 hover:text-emerald-secure"
+                        >
+                            <Phone className="w-6 h-6" />
+                        </Link>
+                    )}
                 </div>
 
                 <div className="pt-12 animate-bounce">

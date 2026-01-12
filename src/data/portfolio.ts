@@ -10,7 +10,8 @@ export const portfolioData = {
         links: {
             linkedin: "https://linkedin.com/in/r-abhishek-reddy",
             email: "mailto:abhishek.ramesh@cispa.de",
-            github: "https://github.com/abhi-reddy",
+            github: "https://github.com/lordprime",
+            phone: "tel:+491234567890", // Update with your actual phone number
         },
     },
     certifications: [

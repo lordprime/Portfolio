@@ -26,10 +26,12 @@ export const Sidebar = () => {
                         <Mail className="w-4 h-4 text-slate-400" />
                         <span className="text-sm text-slate-300">Email</span>
                     </Link>
-                    <p className="flex items-center gap-3 p-3 bg-card rounded-2xl select-all cursor-text text-sm text-slate-300">
-                        <Phone className="w-4 h-4 text-slate-400" />
-                        <span>Phone</span>
-                    </p>
+                    {portfolioData.hero.links.phone && (
+                        <Link href={portfolioData.hero.links.phone} className="flex items-center gap-3 p-3 bg-card rounded-2xl hover:bg-element-hover-bg transition-colors group">
+                            <Phone className="w-4 h-4 text-slate-400" />
+                            <span className="text-sm text-slate-300">Phone</span>
+                        </Link>
+                    )}
                     <Link href={portfolioData.hero.links.linkedin} target="_blank" className="flex items-center gap-3 p-3 bg-card rounded-2xl hover:bg-element-hover-bg transition-colors group">
                         <Linkedin className="w-4 h-4 text-slate-400" />
                         <span className="text-sm text-slate-300">LinkedIn</span>
