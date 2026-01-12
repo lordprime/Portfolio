@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Abhishek Reddy - Cybersecurity Portfolio
 
-## Getting Started
+A high-performance codebase for a cybersecurity researcher portfolio, built with Next.js, Tailwind CSS, and Lucide React.
 
-First, run the development server:
+## 🚀 Teck Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Framework**: Next.js 14+ (App Router)
+- **Styling**: Tailwind CSS (Deep Dark Mode)
+- **Icons**: Lucide React
+- **Fonts**: JetBrains Mono (Headers) & Inter (Body)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2.  **Run Development Server**
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-## Learn More
+3.  **Build for Production**
+    ```bash
+    npm run build
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+## 📂 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/app`: Main pages and layout.
+- `src/components`: Reusable UI components (Hero, Timeline, Projects, etc.).
+- `src/data`: `portfolio.ts` containing all content (Bio, Experience, etc.). Update this file to change website content.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚢 Deployment
 
-## Deploy on Vercel
+### GitHub Pages (Static Export)
+1.  Open `next.config.ts` and add `output: 'export'`.
+2.  Run `npm run build`.
+3.  Deploy the `out` directory to GitHub Pages.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Vercel
+1.  Push code to GitHub.
+2.  Import project into Vercel.
+3.  Deploy (Zero Configuration required).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎨 Customization
+
+- **Colors**: Edit `src/app/globals.css` to change `--indigo-research` and `--emerald-secure`.
+- **Content**: Edit `src/data/portfolio.ts`.
