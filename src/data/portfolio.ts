@@ -51,28 +51,28 @@ export const portfolioData = {
             role: "Research Assistant (Web & AI Security)",
             company: "CISPA -- Helmholtz Center for Information Security",
             period: "Sep 2025 – Present",
-            description: "Leading SW-WCD Research (Web Cache Deception) and AI Agent Security (IDAD). Developed simulation environments with Docker/Nginx/Playwright and benchmarking frameworks for autonomous coding agents.",
+            description: "• SW-WCD Research: Developed `SW-WCD-RESEARCH`, a controlled prototype to study Service Worker-mediated Web Cache Deception. Architected a simulation environment using Nginx (CDN logic) and Express (Origin) to test path sculpting and header manipulation payloads.\n• Infrastructure Automation: Implemented a Playwright-based test suite for cross-browser validation and an R-based statistical engine to compute attack success rates and time-to-cache metrics.\n• AI Agent Security (IDAD): Leading the Vibecoding Security Gap study, benchmarking Agent-Native IDEs vs. CLI Agents. Designing the `XYZ Bench` framework to evaluate 275 development tasks for hallucinated dependencies, logic optimization bypasses, and security vulnerabilities.\n• Vulnerability Discovery: Uncovering novel Verification Gap, risks where autonomous agents report successful tests on vulnerable code, specifically in context poisoning and legacy pattern propagation & identifying Security Vuln.",
             icon: Shield,
         },
         {
             role: "Penetration Testing Intern",
             company: "Hackers4u",
             period: "Sep 2023 – Oct 2023",
-            description: "Executed black-box penetration tests on web applications (SQLi, XSS, IDOR) and automated network enumeration using Nmap/Nessus APIs.",
+            description: "• Executed black-box penetration tests on web applications, identifying critical vulnerabilities (SQLi, XSS, IDOR).\n• Automated network enumeration using Nmap and Nessus APIs, reducing manual scanning time by 40%.\n• Documented findings in markdown reports for technical and non-technical stakeholders.",
             icon: Terminal,
         },
         {
             role: "Cybersecurity & Digital Forensics Intern",
             company: "CybersecuredIndia",
             period: "Dec 2022 – Feb 2023",
-            description: "Analyzed malware behavior logs and conducted forensic investigations preserving chain-of-custody. Reconstructed attack timelines using Registry and Prefetch artifacts.",
+            description: "• Analyzed malware behavior logs using Python to detect obfuscation patterns.\n• Conducted forensic investigations preserving chain-of-custody; reconstructed attack timelines using Registry and Prefetch artifacts.\n• Translated findings into actionable risk mitigation plans.",
             icon: Lock,
         },
         {
             role: "Information Security Administrator Intern",
             company: "Virtual Testing Foundation",
             period: "Sep 2022 – Nov 2022",
-            description: "Mapped adversary behaviors to MITRE ATT&CK controls and assisted in drafting Information Security and Acceptable Use Policies.",
+            description: "• Mapped adversary behaviors to controls using MITRE ATT&CK to identify gaps.\n• Assisted in drafting Information Security and Acceptable Use Policies (ISP/AUP).",
             icon: Server,
         },
         {
@@ -86,31 +86,31 @@ export const portfolioData = {
     projects: [
         {
             title: "SW-WCD-RESEARCH: Web Cache Deception Prototype",
-            description: "Engineered a complete research testbed to evaluate Service Worker-mediated Web Cache Deception behaviors in CDN-backed architectures. Implemented Node.js anomaly detectors and designed PostgreSQL schema for statistical analysis.",
+            description: "• Engineered a complete research testbed to evaluate how Service Workers influence WCD behaviors in CDN-backed architectures.\n• Implemented Node.js anomaly detectors to log rewritten URLs and cache indicators.\n• Developed attack payloads (e.g., t1-path-sculpting.js) to bypass standard CDN cache armor.\n• Designed PostgreSQL schema for trial data storage and statistical power analysis.",
             tech: ["Docker", "Nginx", "Playwright", "R", "JS", "SQL"],
             link: "#",
         },
         {
             title: "The Vibecoding Security Gap (IDAD Evaluation)",
-            description: "Benchmarking Agent-Native IDEs vs. CLI agents across 275 software tasks. Measuring hallucinated dependencies and context poisoning rates using eBPF monitoring.",
+            description: "• Building `XYZ Bench` to compare Agent-Native IDEs vs. CLI agents across 275 software tasks.\n• Measuring hallucinated dependencies and context poisoning rates in autonomous coding.\n• Using eBPF to monitor insecure execution patterns in agent-generated code.",
             tech: ["Python", "eBPF", "Gemini 3.5", "Claude Code"],
             link: "#",
         },
         {
             title: "Protocol Fuzzing",
-            description: "Designed a stateful Fandango IO grammar for a Redis-like key-value store and simulated an SMTP man-in-the-middle attack. Used derivation tree constraints for protocol correctness.",
+            description: "• Designed a stateful Fandango IO grammar for a Redis-like key-value store, enabling valid command sequences (SET/GET/UPDATE) with response validation.\n• Simulated an SMTP man-in-the-middle attack by hijacking authenticated sessions to send spoofed emails without hardcoded credentials.\n• Used derivation tree constraints and prefix-aware tracking to enforce protocol correctness during fuzzing.",
             tech: ["Python", "Fandango", "SMTP", "Redis-like Protocol"],
             link: "#",
         },
         {
             title: "HACKBOT: AI-Powered Automated Exploit Engine",
-            description: "Local LLM interface with RAG to query CVE databases without hallucinations. Deployed on RunPod with latency/resource optimization and integrated static analysis.",
+            description: "• Local LLM interface with RAG to query CVE databases without hallucinations.\n• Deployed on RunPod with latency/resource optimization.\n• Integrated static analysis for auto-generated vulnerability reports.",
             tech: ["Python", "Meta-Llama 3", "RunPod", "RAG"],
             link: "#",
         },
         {
             title: "API-Based NMAP Dashboard",
-            description: "Full-stack dashboard for managing and visualizing Nmap scans. Enabled real-time asset visibility and centralized reporting.",
+            description: "• Full-stack dashboard for managing and visualizing Nmap scans.\n• Enabled real-time asset visibility and centralized reporting.",
             tech: ["Python", "Flask", "REST API"],
             link: "#",
         },
@@ -145,49 +145,56 @@ export const portfolioData = {
         {
             category: "Web & Offensive Security",
             items: [
-                { label: "Vulnerability Assessment", skills: "VAPT, System exploitation, Privilege escalation" },
-                { label: "Web Security", skills: "Client-side vulnerability assessment, Browser testing" },
-                { label: "Infrastructure", skills: "CDN Architecture (Nginx/Varnish/Cloudflare)" }
+                { label: "Skills", skills: "VAPT, System exploitation, Privilege escalation, Proof of concept development, Client-side vulnerability assessment, Browser and extension testing, CDN Architecture (Nginx/Varnish/Cloudflare), OWASP Top 10." }
             ]
         },
         {
             category: "Security Operations",
             items: [
-                { label: "Tools", skills: "Splunk, Wireshark, Autopsy" },
-                { label: "Frameworks", skills: "MITRE ATT&CK, ITIL Framework, ISO 27001" }
+                { label: "Skills", skills: "Splunk, Wireshark, Autopsy, MITRE ATT&CK, ITIL Framework, ISO 27001, Security Audits, Risk Assessment." }
             ]
         },
         {
             category: "Cloud & DevSecOps",
             items: [
-                { label: "Cloud Security", skills: "AWS Security fundamentals, Azure SIEM/SOAR" },
-                { label: "Infrastructure as Code", skills: "Terraform, Docker, Kubernetes" }
+                { label: "Skills", skills: "AWS Security fundamentals, Azure SIEM/SOAR, Infrastructure as Code (Terraform), Container security (Docker, Kubernetes), CI/CD Security concepts, Misconfiguration analysis." }
             ]
         },
         {
             category: "Programming",
             items: [
-                { label: "Languages", skills: "Python, Bash/Shell Scripting, JavaScript/Node.js, C++" }
+                { label: "Skills", skills: "Python (automation, security tooling, agent workflows), Bash/Shell Scripting, JavaScript/Node.js, C++" }
             ]
         },
         {
             category: "ML & Tools",
             items: [
-                { label: "Frameworks", skills: "PyTorch, TensorFlow, RunPod, Langchain" },
-                { label: "Models", skills: "LLMs (Claude Code), Autoencoders, RL" }
+                { label: "Skills", skills: "PyTorch, TensorFlow, Autoencoders, RL, LLMs (Claude Code), HuggingFace, RunPod, Langchain, VectorDatabases, Docker, Kubernetes." }
             ]
         },
         {
             category: "AI Security",
             items: [
-                { label: "Attacks", skills: "Prompt Injection, Jailbreaking, Data Poisoning" },
-                { label: "Defense", skills: "Input Sanitization, Adversarial Training" }
+                { label: "Attacks", skills: "Prompt Injection, Jailbreaking, Data Poisoning, Membership Inference attack." },
+                { label: "Defense", skills: "Input Sanitization (Guardrails), Adversarial Training, Robustness Verification." }
             ]
         },
         {
-            category: "Productivity",
+            category: "AI & Security Automation",
             items: [
-                { label: "Tools", skills: "Jira, GitHub, Markdown, LaTeX" }
+                { label: "Skills", skills: "AI-assisted security workflows, Integration with LLMs (Claude, GPT, Llama), agent-based automation." }
+            ]
+        },
+        {
+            category: "Database & Data Handling",
+            items: [
+                { label: "Skills", skills: "SQLite3, PostgreSQL, JSON-based data modeling, dataset preprocessing for security and ML pipelines." }
+            ]
+        },
+        {
+            category: "Productivity Ecosystem",
+            items: [
+                { label: "Skills", skills: "Workspace (Script automation, Data Studio reporting), Jira (Agile workflow management), Documentation (GitHub, Markdown), Communication (Slack, Teams, LaTeX)." }
             ]
         }
     ],
@@ -229,4 +236,3 @@ export const portfolioData = {
         { quote: "A hacker does for love what others would not do for money.", author: "Laura Creighton" },
     ],
 };
-
