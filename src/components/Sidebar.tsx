@@ -10,7 +10,7 @@ export const Sidebar = () => {
             <div className="text-center">
                 <div className="relative w-48 h-48 mx-auto mb-6">
                     <Image
-                        src="/avatar.png"
+                        src={portfolioData.hero.profileImage}
                         alt="Profile"
                         width={192}
                         height={192}
