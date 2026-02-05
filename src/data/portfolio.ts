@@ -4,14 +4,14 @@ export const portfolioData = {
     hero: {
         name: "Abhishek Reddy",
         tagline: "Cybersecurity Researcher @ CISPA | AI Security | VAPT Specialist",
-        bio: "Cybersecurity researcher and MSc student at Saarland University with a focus on web application security and attacks against ML models. Currently working as a Research Assistant at CISPA, developing automated frameworks for CDN fingerprinting and cloud-based strategies for Web Application Penetration Testing (WAPT). Building hybrid tools integrating LLMs and Reinforcement Learning to analyze XSS and CSRF vulnerabilities.",
+        bio: "M.Sc. Cybersecurity student and Research Assistant at CISPA with technical & practical foundation in Web Security, AI Agent Vulnerabilities, and Machine Learning. Currently leading novel research on Service Worker-mediated Web Cache Deception (SW-WCD) and the first systematic security evaluation of Autonomous Coding Agents (Intent-Driven Autonomous Development). Proficient in building complex simulation infrastructures (Docker/Nginx/Playwright), statistical analysis (R), and auditing AI-generated software using eBPF and stateful fuzzing.",
         location: "Saarbrücken, Germany",
-        profileImage: "",
+        profileImage: "/image.jpg",
         links: {
             linkedin: "https://linkedin.com/in/r-abhishek-reddy",
             email: "mailto:abhishek.ramesh@cispa.de",
             github: "https://github.com/lordprime",
-            phone: "tel:+491234567890", // Update with your actual phone number
+            phone: "tel:+491625922595",
         },
     },
     certifications: [
@@ -48,31 +48,31 @@ export const portfolioData = {
     ],
     experience: [
         {
-            role: "Research Assistant",
-            company: "CISPA Helmholtz Center for Information Security",
-            period: "Aug 2025 - Present",
-            description: "Researching web application security with a focus on detecting and mitigating Cross-Site Scripting (XSS) attacks using cloud-based strategies. Developing an automated framework for CDN fingerprinting, with emphasis on service workers and web caches.",
+            role: "Research Assistant (Web & AI Security)",
+            company: "CISPA -- Helmholtz Center for Information Security",
+            period: "Sep 2025 – Present",
+            description: "Leading SW-WCD Research (Web Cache Deception) and AI Agent Security (IDAD). Developed simulation environments with Docker/Nginx/Playwright and benchmarking frameworks for autonomous coding agents.",
             icon: Shield,
         },
         {
             role: "Penetration Testing Intern",
             company: "Hackers4u",
-            period: "Sep 2023 - Oct 2023",
-            description: "Performed network and application vulnerability assessments using Nessus, Nmap, and simulated attacks. Identified and documented critical security gaps.",
+            period: "Sep 2023 – Oct 2023",
+            description: "Executed black-box penetration tests on web applications (SQLi, XSS, IDOR) and automated network enumeration using Nmap/Nessus APIs.",
             icon: Terminal,
         },
         {
             role: "Cybersecurity & Digital Forensics Intern",
             company: "CybersecuredIndia",
-            period: "Dec 2022 - Feb 2023",
-            description: "Analyzed malware behavior and conducted forensic investigations while maintaining chain-of-custody integrity. Developed risk mitigation plans based on findings.",
+            period: "Dec 2022 – Feb 2023",
+            description: "Analyzed malware behavior logs and conducted forensic investigations preserving chain-of-custody. Reconstructed attack timelines using Registry and Prefetch artifacts.",
             icon: Lock,
         },
         {
             role: "Information Security Administrator Intern",
             company: "Virtual Testing Foundation",
-            period: "Sep 2022 - Nov 2022",
-            description: "Completed 10-week training in information security. Assisted in policy documentation and threat analysis using the MITRE ATT&CK framework.",
+            period: "Sep 2022 – Nov 2022",
+            description: "Mapped adversary behaviors to MITRE ATT&CK controls and assisted in drafting Information Security and Acceptable Use Policies.",
             icon: Server,
         },
         {
@@ -85,95 +85,109 @@ export const portfolioData = {
     ],
     projects: [
         {
-            title: "HackBot – AI-Powered Cybersecurity Assistant",
-            description: "Built with Meta-Llama2 to analyze threats and generate vulnerability reports in Markdown. Dual deployment (local / RunPod) with CLI interface for real-time analysis. Integrated static code analysis to automate exploit detection.",
-            tech: ["Meta-Llama2", "Python", "Static Analysis"],
+            title: "SW-WCD-RESEARCH: Web Cache Deception Prototype",
+            description: "Engineered a complete research testbed to evaluate Service Worker-mediated Web Cache Deception behaviors in CDN-backed architectures. Implemented Node.js anomaly detectors and designed PostgreSQL schema for statistical analysis.",
+            tech: ["Docker", "Nginx", "Playwright", "R", "JS", "SQL"],
             link: "#",
         },
         {
-            title: "API-Based Nmap – Network Scanning Automation",
-            description: "Uses python-nmap and Flask for customizable vulnerability scans. Centralized dashboard for monitoring and report generation.",
-            tech: ["Python", "Flask", "Nmap"],
-            link: "https://doi.org/10.69888/FTSIN.2024.000290",
+            title: "The Vibecoding Security Gap (IDAD Evaluation)",
+            description: "Benchmarking Agent-Native IDEs vs. CLI agents across 275 software tasks. Measuring hallucinated dependencies and context poisoning rates using eBPF monitoring.",
+            tech: ["Python", "eBPF", "Gemini 3.5", "Claude Code"],
+            link: "#",
         },
         {
-            title: "AI-Based Enumeration and Exploit Suggestor",
-            description: "Autonomous pentest assistant implementing AI to map attack surfaces and suggest exploits, mimicking tools like Nmap and Metasploit. Generates structured Markdown reports for streamlined documentation.",
-            tech: ["AI/ML", "Python", "Metasploit"],
+            title: "Protocol Fuzzing",
+            description: "Designed a stateful Fandango IO grammar for a Redis-like key-value store and simulated an SMTP man-in-the-middle attack. Used derivation tree constraints for protocol correctness.",
+            tech: ["Python", "Fandango", "SMTP", "Redis-like Protocol"],
+            link: "#",
+        },
+        {
+            title: "HACKBOT: AI-Powered Automated Exploit Engine",
+            description: "Local LLM interface with RAG to query CVE databases without hallucinations. Deployed on RunPod with latency/resource optimization and integrated static analysis.",
+            tech: ["Python", "Meta-Llama 3", "RunPod", "RAG"],
+            link: "#",
+        },
+        {
+            title: "API-Based NMAP Dashboard",
+            description: "Full-stack dashboard for managing and visualizing Nmap scans. Enabled real-time asset visibility and centralized reporting.",
+            tech: ["Python", "Flask", "REST API"],
             link: "#",
         },
     ],
     publications: [
         {
-            title: "Hybrid Quantum-Classical Neural Network Incorporating Attention Mechanisms for Anomaly Detection",
-            citation: "AI4S 2025 - Wright State University",
-            year: "2025",
-            link: "https://www.linkedin.com/posts/r-abhishek-reddy_connections-ai4s2025-wrightstateuniversity-activity-7406370417491288064-qqTk",
-        },
-        {
-            title: "Autoencoder-Driven Machine Learning for Advanced Cybersecurity Malware Detection",
-            citation: "DOI: 10.69888/FTSIN.2024.000292",
+            title: "Autoencoder-Driven Machine Learning for Advance Cybersecurity Malware Detection",
+            citation: "FMDB Transactions on Sustainable Intelligent Networks, Vol. 1, No. 4, pp. 252–264",
             year: "2024",
             link: "https://doi.org/10.69888/FTSIN.2024.000292",
         },
         {
-            title: "Docker-Based Decentralized Vulnerability Assessment with Port Scanning",
-            citation: "DOI: 10.69888/FTSIN.2024.000290",
+            title: "Docker Based Decentralized Vulnerability Assessment with Port Scanning",
+            citation: "FMDB Transactions on Sustainable Intelligent Networks",
             year: "2024",
             link: "https://doi.org/10.69888/FTSIN.2024.000290",
         },
         {
-            title: "API-Based Network Scanning",
-            citation: "ISBN: 978-93-95830-43-0",
-            year: "2023",
-            link: "https://isbnsearch.org/isbn/9789395830430",
+            title: "API-based Network Scanning, Mapana",
+            citation: "Proceedings of National Conference on Emerging Trends in Computer Science",
+            year: "2024",
+            link: "#",
         },
         {
             title: "Enhancing Fog Computing Through Data Center Expansion",
-            citation: "ISSN: 0972-8945",
+            citation: "SIJSS-UGC Journal (ISSN: 0972–8945)",
             year: "2023",
             link: "https://www.sijss.com/",
         },
     ],
     skills: [
         {
-            category: "Offensive Security",
+            category: "Web & Offensive Security",
             items: [
-                { label: "Penetration Testing", skills: "Metasploit, Burp Suite, Nmap, Nessus, Sqlmap" },
-                { label: "Red Teaming", skills: "MITRE ATT&CK Framework, APT Simulation" }
+                { label: "Vulnerability Assessment", skills: "VAPT, System exploitation, Privilege escalation" },
+                { label: "Web Security", skills: "Client-side vulnerability assessment, Browser testing" },
+                { label: "Infrastructure", skills: "CDN Architecture (Nginx/Varnish/Cloudflare)" }
             ]
         },
         {
-            category: "Defensive Security",
+            category: "Security Operations",
             items: [
-                { label: "Incident Response", skills: "Splunk, Wireshark, Autopsy, Risk Assessment" },
-                { label: "Compliance", skills: "ITIL Framework, ISO 27001, Security Audits" }
+                { label: "Tools", skills: "Splunk, Wireshark, Autopsy" },
+                { label: "Frameworks", skills: "MITRE ATT&CK, ITIL Framework, ISO 27001" }
             ]
         },
         {
-            category: "Development Manager & Automation",
+            category: "Cloud & DevSecOps",
             items: [
-                { label: "Languages", skills: "Python (Security Automation, Flask), Java, C++" },
-                { label: "AI/ML", skills: "Meta-Llama3, Code Analysis, Prompt Engineering" },
-                { label: "Development", skills: "Agile(Scrum), Jira & Confluence" },
-                { label: "", skills: "Software Delivery Lifecycle (SDLC)" }
+                { label: "Cloud Security", skills: "AWS Security fundamentals, Azure SIEM/SOAR" },
+                { label: "Infrastructure as Code", skills: "Terraform, Docker, Kubernetes" }
             ]
         },
         {
-            category: "Cloud & Networking",
+            category: "Programming",
             items: [
-                { label: "AWS Security Hub", skills: "Threat detection/Compliance Monitoring" },
-                { label: "Azure", skills: "SIEM/SOAR automation" },
-                { label: "Network", skills: "VLAN segmentation, TCP/IP Stack optimization, Firewall Configuration, SD-WAN" },
-                { label: "", skills: "Network Monitoring with Wireshark/tcpdump" }
+                { label: "Languages", skills: "Python, Bash/Shell Scripting, JavaScript/Node.js, C++" }
             ]
         },
         {
-            category: "Productivity Ecosystem",
+            category: "ML & Tools",
             items: [
-                { label: "Collaboration tools", skills: "Microsoft 365, Google Workspace (Script automation, Data Studio reporting), Jira (Agile workflow management)" },
-                { label: "Documentation", skills: "GitHub (Infrastructure documentation), Markdown (Technical writing, Readme Automation)" },
-                { label: "Communication", skills: "Slack, Teams, LaTeX" }
+                { label: "Frameworks", skills: "PyTorch, TensorFlow, RunPod, Langchain" },
+                { label: "Models", skills: "LLMs (Claude Code), Autoencoders, RL" }
+            ]
+        },
+        {
+            category: "AI Security",
+            items: [
+                { label: "Attacks", skills: "Prompt Injection, Jailbreaking, Data Poisoning" },
+                { label: "Defense", skills: "Input Sanitization, Adversarial Training" }
+            ]
+        },
+        {
+            category: "Productivity",
+            items: [
+                { label: "Tools", skills: "Jira, GitHub, Markdown, LaTeX" }
             ]
         }
     ],
