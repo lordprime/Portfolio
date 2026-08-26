@@ -52,9 +52,14 @@ export const MainContent = () => {
                         <div className="text-sm text-slate-500 font-mono mb-4 bg-background inline-block px-3 py-1.5 rounded-xl">
                             {selectedJob.period}
                         </div>
-                        <p className="text-slate-300 leading-relaxed text-sm">
-                            {selectedJob.description}
-                        </p>
+                        <ul className="space-y-2.5">
+                            {selectedJob.description.split("\n").filter(Boolean).map((line, i) => (
+                                <li key={i} className="flex gap-2.5 text-slate-300 leading-relaxed text-sm">
+                                    <span className="text-indigo-400 mt-0.5 shrink-0">•</span>
+                                    <span>{line.replace(/^[•\-]\s*/, "")}</span>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                 </div>
             )}
