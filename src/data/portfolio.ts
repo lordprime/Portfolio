@@ -1,10 +1,10 @@
-import { Shield, Terminal, Server, Lock, Code, Cloud, Network, Database } from "lucide-react";
+import { Shield, Terminal, Server, Lock, Brain } from "lucide-react";
 
 export const portfolioData = {
     hero: {
         name: "Abhishek Reddy",
-        tagline: "Cybersecurity Researcher @ CISPA | AI Security | VAPT Specialist",
-        bio: "M.Sc. Cybersecurity student and Research Assistant at CISPA with technical & practical foundation in Web Security, AI Agent Vulnerabilities, and Machine Learning. Currently leading novel research on Service Worker-mediated Web Cache Deception (SW-WCD) and the first systematic security evaluation of Autonomous Coding Agents (Intent-Driven Autonomous Development). Proficient in building complex simulation infrastructures (Docker/Nginx/Playwright), statistical analysis (R), and auditing AI-generated software using eBPF and stateful fuzzing.",
+        tagline: "Cybersecurity Researcher @ CISPA & Saarland University ML Group | AI Security | Explainable AI",
+        bio: "M.Sc. Cybersecurity student and Research Assistant at CISPA and the Saarland University Machine Learning Group, with research experience spanning AI Security, Web Security, Explainable AI, and Trustworthy Machine Learning. Currently leading research on Service Worker-mediated Web Cache Deception (SW-WCD), autonomous coding agent security, and concept-based interpretability methods for deep learning systems. Experienced in designing large-scale experimental infrastructures, evaluating AI system reliability and vulnerabilities, developing reproducible ML pipelines, and conducting empirical security and machine learning research.",
         location: "Saarbrücken, Germany",
         profileImage: "/image.jpg",
         links: {
@@ -48,6 +48,13 @@ export const portfolioData = {
     ],
     experience: [
         {
+            role: "Research Assistant (Explainable AI & Trustworthy Machine Learning)",
+            company: "Saarland University -- Machine Learning Group",
+            period: "April 2026 – Present",
+            description: "• Concept Bottleneck Models (CBMs): Conducting research on spatially intervenable Concept Bottleneck Models using the CUB-200 dataset, investigating how concept-level interventions influence downstream model predictions and interpretability.\n• Concept Segmentation: Built an automated concept-grounding framework leveraging Segment Anything Models (SAM) by META to generate concept-specific spatial masks and evaluate concept localization quality across fine-grained visual recognition tasks.\n• Intervention Faithfulness Analysis: Designed and executed large-scale Mask-IN and Mask-OUT intervention experiments to quantify the causal impact of concept regions on concept activations and classification performance, evaluating concept faithfulness beyond traditional accuracy metrics.\n• Saliency-Guided Interventions: Investigating whether continuous saliency representations can serve as effective intervention mechanisms, comparing saliency-based interventions against explicit concept interventions to study representation faithfulness and model behavior.",
+            icon: Brain,
+        },
+        {
             role: "Research Assistant (Web & AI Security)",
             company: "CISPA -- Helmholtz Center for Information Security",
             period: "Sep 2025 – Present",
@@ -74,13 +81,6 @@ export const portfolioData = {
             period: "Sep 2022 – Nov 2022",
             description: "• Mapped adversary behaviors to controls using MITRE ATT&CK to identify gaps.\n• Assisted in drafting Information Security and Acceptable Use Policies (ISP/AUP).",
             icon: Server,
-        },
-        {
-            role: "Networking & Cybersecurity Intern",
-            company: "Cybersocial",
-            period: "Aug 2022 - Sep 2022",
-            description: "Mapped network topologies and documented IP/VLAN configurations. Conducted vulnerability scans using Nessus/Nmap.",
-            icon: Network,
         },
     ],
     projects: [

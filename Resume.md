@@ -8,7 +8,7 @@
 
 ## Professional Summary
 
-M.Sc. Cybersecurity student and Research Assistant at CISPA with technical & practical foundation in **Web Security**, **AI Agent Vulnerabilities**, and **Machine Learning**. Currently leading novel research on Service Worker-mediated Web Cache Deception (SW-WCD) and the first systematic security evaluation of Autonomous Coding Agents (Intent-Driven Autonomous Development). Proficient in building complex simulation infrastructures (Docker/Nginx/Playwright), statistical analysis (R), and auditing AI-generated software using eBPF and stateful fuzzing. Experienced in debugging complex Python pipelines and deploying ML models.
+M.Sc. Cybersecurity student and Research Assistant at CISPA and the Saarland University Machine Learning Group, with research experience spanning **AI Security**, **Web Security**, **Explainable AI**, and **Trustworthy Machine Learning**. Currently leading research on Service Worker-mediated Web Cache Deception (SW-WCD), autonomous coding agent security, and concept-based interpretability methods for deep learning systems. Experienced in designing large-scale experimental infrastructures, evaluating AI system reliability and vulnerabilities, developing reproducible ML pipelines, and conducting empirical security and machine learning research.
 
 ---
 
@@ -29,6 +29,13 @@ M.Sc. Cybersecurity student and Research Assistant at CISPA with technical & pra
 ---
 
 ## Professional Experience
+
+### Saarland University -- Machine Learning Group — Saarbrücken, Germany  
+**Research Assistant (Explainable AI & Trustworthy Machine Learning)** — April 2026 – Present  
+- **Concept Bottleneck Models (CBMs):** Conducting research on spatially intervenable Concept Bottleneck Models using the CUB-200 dataset, investigating how concept-level interventions influence downstream model predictions and interpretability.  
+- **Concept Segmentation:** Built an automated concept-grounding framework leveraging Segment Anything Models (SAM) by META to generate concept-specific spatial masks and evaluate concept localization quality across fine-grained visual recognition tasks.  
+- **Intervention Faithfulness Analysis:** Designed and executed large-scale Mask-IN and Mask-OUT intervention experiments to quantify the causal impact of concept regions on concept activations and classification performance, evaluating concept faithfulness beyond traditional accuracy metrics.  
+- **Saliency-Guided Interventions:** Investigating whether continuous saliency representations can serve as effective intervention mechanisms, comparing saliency-based interventions against explicit concept interventions to study representation faithfulness and model behavior.
 
 ### CISPA -- Helmholtz Center for Information Security — Saarbrücken, Germany  
 **Research Assistant (Web & AI Security)** — Sep 2025 – Present  
