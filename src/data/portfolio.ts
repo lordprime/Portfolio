@@ -85,6 +85,12 @@ export const portfolioData = {
     ],
     projects: [
         {
+            title: "Spatial Grounding in Concept Bottleneck Models",
+            description: "• Developed a comprehensive spatial grounding framework to evaluate the interpretability and faithfulness of visual Concept Bottleneck Models (CBMs).\n• Introduced novel metrics (spatial sufficiency and necessity) to rigorously quantify how concept predictions rely on spatially localized information.\n• Designed and implemented the Spatial Concept Influence Matrix (SCIM) to measure cross-concept entanglement and spatial purity.\n• Conducted large-scale empirical studies demonstrating that architectural bottleneck design and spatial structure determine concept grounding.",
+            tech: ["Python", "PyTorch", "CUB-200", "RIVAL-10"],
+            link: "#",
+        },
+        {
             title: "SW-WCD-RESEARCH: Web Cache Deception Prototype",
             description: "• Engineered a complete research testbed to evaluate how Service Workers influence WCD behaviors in CDN-backed architectures.\n• Implemented Node.js anomaly detectors to log rewritten URLs and cache indicators.\n• Developed attack payloads (e.g., t1-path-sculpting.js) to bypass standard CDN cache armor.\n• Designed PostgreSQL schema for trial data storage and statistical power analysis.",
             tech: ["Docker", "Nginx", "Playwright", "R", "JS", "SQL"],
@@ -116,6 +122,18 @@ export const portfolioData = {
         },
     ],
     publications: [
+        {
+            title: "Hybrid Quantum-Classical Neural Network Incorporating Attention Mechanisms for Anomaly Detection",
+            citation: "Artificial Intelligence: Towards Sustainable Intelligence (CCIS, volume 2814), pp. 141-154",
+            year: "2026",
+            link: "https://doi.org/10.1007/978-3-032-20447-9_13",
+        },
+        {
+            title: "AI In Action: Exploiting the Nexus of Cybersecurity Attacks and Social Engineering",
+            citation: "Research Paper",
+            year: "2026",
+            link: "https://drive.proton.me/urls/R83Q1HJS9W#8Z8HRKh44jS0",
+        },
         {
             title: "Autoencoder-Driven Machine Learning for Advance Cybersecurity Malware Detection",
             citation: "FMDB Transactions on Sustainable Intelligent Networks, Vol. 1, No. 4, pp. 252–264",
