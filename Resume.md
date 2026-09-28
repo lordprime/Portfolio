@@ -65,6 +65,12 @@ M.Sc. Cybersecurity student and Research Assistant at CISPA and the Saarland Uni
 
 ## Key Projects & Research
 
+### Spatial Grounding in Concept Bottleneck Models | _Python, PyTorch, CUB-200, RIVAL-10_ — Saarland University Research  
+- Developed a comprehensive spatial grounding framework to evaluate the interpretability and faithfulness of visual Concept Bottleneck Models (CBMs) beyond traditional predictive accuracy.  
+- Introduced novel metrics (spatial sufficiency and necessity) to rigorously quantify how concept predictions rely on spatially localized information within learned representations.  
+- Designed and implemented the Spatial Concept Influence Matrix (SCIM) to measure cross-concept entanglement and spatial purity across diverse CBM architectures and backbones.  
+- Conducted large-scale empirical studies demonstrating that architectural bottleneck design and spatial structure more strongly determine concept grounding than training strategies.
+
 ### SW-WCD-RESEARCH: Web Cache Deception Prototype | _Docker, Nginx, Playwright, R, JS, SQL_ — Research  
 - Engineered a complete research testbed to evaluate how Service Workers influence WCD behaviors in CDN-backed architectures.  
 - Implemented Node.js anomaly detectors to log rewritten URLs and cache indicators.  
@@ -93,6 +99,16 @@ M.Sc. Cybersecurity student and Research Assistant at CISPA and the Saarland Uni
 ---
 
 ## Publications
+
+- **Hybrid Quantum-Classical Neural Network Incorporating Attention Mechanisms for Anomaly Detection**  
+  _Artificial Intelligence: Towards Sustainable Intelligence (CCIS, volume 2814)_, pp. 141-154, 2026.  
+  DOI: [10.1007/978-3-032-20447-9_13](https://doi.org/10.1007/978-3-032-20447-9_13)  
+  _Developed a robust hybrid model combining quantum computing and attention mechanisms, achieving 99.8% test accuracy for anomaly detection in high-dimensional cybersecurity data._
+
+- **AI In Action: Exploiting the Nexus of Cybersecurity Attacks and Social Engineering**  
+  _Research Paper_.  
+  URL: [Link](https://drive.proton.me/urls/R83Q1HJS9W#8Z8HRKh44jS0)  
+  _Analyzed the complex interactions between conversational AI (e.g., GPT, LLAMA) and cybersecurity attacks, exploring automated payload generation and social engineering vulnerabilities._
 
 - **Autoencoder-Driven Machine Learning for Advance Cybersecurity Malware Detection**  
   _FMDB Transactions on Sustainable Intelligent Networks_, Vol. 1, No. 4, pp. 252–264, 2024.  
